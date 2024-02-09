@@ -6,7 +6,7 @@ import Navbar2 from "./navbar2"
 import Mobilenav from "./mobilenav"
 export default function Navbar() {
     return (
-        <div className="  flex flex-col bg-white">
+        <div className="z-50  flex flex-col bg-white">
 
             <div className="flex p-5  justify-between items-center  text-black dark">
                 <div>
