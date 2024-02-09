@@ -5,13 +5,13 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 const MenuItem = ( { label, submenus, isOpen, toggleMenu } ) => (
-    <div className="relative inline-block p-3  text-center">
+    <div className="relative flex p-3 flex-col text-start">
         <button className="bg-white text-black  " onClick={toggleMenu}>
             {label}
         </button>
 
         {isOpen && (
-            <div className="absolute mt-2 bg-white border text-black border-gray-300 rounded shadow">
+            <div className="relative mt-2 bg-white border text-black border-gray-300 rounded shadow">
                 <ul>
                     {submenus.map( ( submenu, index ) => (
                         <li key={index} className="p-2">
@@ -42,7 +42,7 @@ const Menu = () => {
     ];
 
     return (
-        <div className=" hidden lg:flex justify-center items-center">
+        <div className=" bg-white absolute flex flex-col justify-start w-screen items-start -left-0 top-16">
             {menus.map( ( menu, index ) => (
                 <MenuItem
                     key={index}
