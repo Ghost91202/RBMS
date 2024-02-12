@@ -5,7 +5,7 @@ export default function SEO() {
         <div ClassName="flex flex-col ">
             {/* <Navbar /> */}
             <Navbar/>
-            hello team
+           EDUCATION
         <Footer/>
             {/* <Footer /> */}
         </div>
