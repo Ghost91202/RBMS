@@ -1,47 +1,67 @@
 
 import Link from "next/link";
-import { MdOutlineSegment } from "react-icons/md";
-import Dropdown from "../assets/dropdownbutton"
-import Navbar2 from "./navbar2"
-import Mobilenav from "./mobilenav"
+
+import "./main.css"
 export default function Navbar() {
     return (
         <div className="z-50  flex flex-col bg-white">
 
-            <div className="flex p-5  justify-between items-center  text-black dark">
+            <div className="flex p-5 w-full  justify-between items-center  text-black dark">
                 <div>
                     <h1>logo</h1>
                 </div>
 
                 <div className=" justify-between items-center gap-4 hidden lg:flex">
-                    {/* <Dropdown menu="company"
-                        submenu1="About us"
-                        submenu2="Vision & mission"
-                        submenu3="Team"
-                        submenu4="Careers"
-                        submenu5="Life at RBMS"
-                    />
-                    <Dropdown menu="Industries "
-                        submenu1="B2B"
-                        submenu2="HEALTHCARE"
-                        submenu3="EDUCATION"
 
-                    />
-                    <Dropdown menu="RESOURCES"
-                        submenu1="SEARCH RESEARCH TRENDS"
+                    <nav>
+                        <ul className="menus flex gap-5 w-full">
+                            <li>
+                                <Link href="/">Home</Link>
+                            </li>
 
-                    /> */}
+                            <li className="dropdown">
+                                <a href="#" className="links">Company</a>
+                                <div className="dropdown-content flex flex-col gap-5 p-5 w-full">
+                                    <Link href="/services/service1" className=" w-full">About us</Link>
+                                    <br/>
+                                    <Link href="company/vision&mission" className=" flex w-full">Vision & Mission</Link>
+                                    <br/>
+                                    <Link href="/services/service3" className=" w-full"> </Link>
+                                </div>
+                            </li>
+                            <li className="dropdown">
+                                <a href="#" className="links">Services</a>
+                                <div className="dropdown-content flex flex-col">
+                                    <Link href="/services/service1" className=" w-full">Service 1</Link>
+                                    <Link href="/services/service2" className=" w-full">Service 2</Link>
+                                    <Link href="/services/service3" className=" w-full">Service 3</Link>
+                                </div>
+                            </li>
+                            <li className="dropdown">
+                                <a href="#" className="links">Services</a>
+                                <div className="dropdown-content flex flex-col">
+                                    <Link href="/services/service1" className=" w-full">Service 1</Link>
+                                    <Link href="/services/service2" className=" w-full">Service 2</Link>
+                                    <Link href="/services/service3" className=" w-full">Service 3</Link>
+                                </div>
+                            </li>
+                            <li className="dropdown">
+                                <a href="#" className="links">Services</a>
+                                <div className="dropdown-content flex flex-col">
+                                    <Link href="/services/service11" className=" w-full">Service 1</Link>
+                                    <Link href="/services/service2" className=" w-full">Service 2</Link>
+                                    <Link href="/services/service3" className=" w-full">Service 3</Link>
+                                </div>
+                            </li>
 
-                    <Link href="">COMPANY</Link>
-                    <Link href="">INDUSTRIES</Link>
+                        </ul>
 
-                    <Link href="">BLOGS</Link>
-                    <Link href="">CONTACT</Link>
+
+                    </nav>
 
                 </div>
-                <Mobilenav/>
             </div>
-             <Navbar2 />
+
         </div>
     )
 }
