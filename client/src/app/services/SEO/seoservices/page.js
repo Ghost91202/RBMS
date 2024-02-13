@@ -1,12 +1,16 @@
 import Navbar from "@/components/navbar/mainnav";
 import Footer from "@/components/footer/footer";
+import Banner from "@/components/assets/Banner/banner2";
 export default function SEO() {
     return (
         <div ClassName="flex flex-col ">
             {/* <Navbar /> */}
-            <Navbar/>
-            hello team
-        <Footer/>
+            <Navbar />
+            <Banner heading="Your Dedicated Seo Expert Just a Click Away!"
+                desc=""
+                btn=""
+            />
+            <Footer />
             {/* <Footer /> */}
         </div>
     );

@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-
+import logo from "../../assets/RBMS logo.jpeg.jpg"
 import "./main.css"
 export default function Navbar() {
     return (

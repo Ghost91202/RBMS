@@ -1,6 +1,7 @@
 import Button from "../Buttons/button"
 import Cards from "../cards/cards"
-
+import Image from "next/image"
+import Bannerimg from "../../../assets/banner.avif"
 import { IoLogoAppleAr } from "react-icons/io5";
 
 export default function Banner(  ) {
@@ -20,7 +21,8 @@ export default function Banner(  ) {
                     <Cards icons=<IoLogoAppleAr/>  title="1.Application" desc="Fill the application form." /></div>
 
             </div>
-            <img src="https://images.unsplash.com/photo-1707301451568-171b23a63ba4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-screen lg:h-96"/>
+                     <Image src={Bannerimg} alt="digital marketing" className="w-screen lg:h-96"/>
+
     </div>
 )
 }

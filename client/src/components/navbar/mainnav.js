@@ -1,10 +1,14 @@
 // Navbar.js
 "use client";
 // Navbar.js
-
+import logo from "../../assets/RBMS logo.jpeg.jpg"
 import { useState } from 'react';
 import Link from 'next/link';
+import Logo from "../../assets/logo.png"
 import "./main.css"
+import Image from "next/image";
+import { IoIosArrowDown } from "react-icons/io";
+
 const Navbar = () => {
   const [ isMenuOpen, setIsMenuOpen ] = useState( false );
 
@@ -13,60 +17,78 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="text-blue-700">
+      <div>
+
+      </div>
       <div className={`menu-toggle ${ isMenuOpen ? 'open' : '' }`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
       <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
-        <div className="flex gap-20 bg-white justify-between pl-4 pr-10 text-black p-4">
-          <div>
-            <h1>logo</h1>
-          </div>
-          <div className="flex gap-4 bg-white text-black">
+        <div className="flex gap-20 bg-white justify-between pl-4 pr-10 text-blue-700 p-4">
+          <Link href="/">
+            <Image src={Logo} alt="rahil business multiple solution" className="w-10" />
+          </Link>
+          <div className="flex gap-4 items-center bg-white text-blue-700">
             <li>
-              <Link href="/">HOME</Link>
+              <Link className="hover:underline" href="/">HOME</Link>
             </li>
             <li className="dropdown">
-              <a href="#">COMPANY</a>
-              <div className="dropdown-content ">
+              <a  href="#" className="flex items-center hover:underline gap-1">COMPANY <IoIosArrowDown className="text-red-500"/></a>
+              <div className="dropdown-content z-50">
                 <div className="flex gap-10">
                   <div className="flex gap-2 flex-col">
-                    <Link href="/company/vision&mission">Vision & mission</Link>
+                    <Link className="hover:underline" href="/company/vision&mission">Vision & mission</Link>
 
-                    <Link href="/company/Team">Team </Link>
-                    <Link href="/company/CAREERS">CAREERS</Link>
-                    <Link href="/company/Blogs">BLOGS</Link>
+                    <Link className="hover:underline" href="/company/Team">Team </Link>
+                    <Link className="hover:underline" href="/company/CAREERS">CAREERS</Link>
+                    <Link className="hover:underline" href="/company/Blogs">BLOGS</Link>
                   </div>
 
                 </div>
               </div>
             </li>
             <li className="dropdown">
-              <a href="#">INDUSTRIES</a>
+              <a  href="#" className="flex items-center gap-1 hover:underline">INDUSTRIES <IoIosArrowDown className="text-red-500"/></a>
               <div className="dropdown-content ">
                 <div className="flex gap-10">
                   <div className="flex gap-2 flex-col">
-                    <Link href="/INDUSTRIES/BFSI">BFSI</Link>
+                    <Link className="hover:underline" href="/INDUSTRIES/BFSI">BFSI</Link>
 
-                    <Link href="/INDUSTRIES/B2B">B2B</Link>
-                    <Link href="/INDUSTRIES/HEALTHCARE">HEALTHCARE  </Link>
-                    <Link href="/INDUSTRIES/EDUCATION">EDUCATION   </Link>
+                    <Link className="hover:underline" href="/INDUSTRIES/B2B">B2B</Link>
+                    <Link className="hover:underline" href="/INDUSTRIES/HEALTHCARE">HEALTHCARE  </Link>
+                    <Link className="hover:underline" href="/INDUSTRIES/EDUCATION">EDUCATION   </Link>
                   </div>
 
                 </div>
               </div>
             </li>
-           <Link href="/BLOGS">BLOGS</Link>
-           <Link href="/CONTACT">CONTACT</Link>
+            <li className="dropdown">
+              <a  href="#" className="flex items-center hover:underline gap-1">SERVICES <IoIosArrowDown className="text-red-500"/></a>
+              <div className="dropdown-content ">
+                <div className="flex gap-10">
+                  <div className="flex gap-2 flex-col">
+                    <Link className="hover:underline" href="/services" >DIGITAL MARKETING </Link>
+
+                    <Link className="hover:underline" href="/INDUSTRIES/B2B">WEBSITE DEVELOPMENT </Link>
+                    <Link className="hover:underline" href="/INDUSTRIES/HEALTHCARE">ACCOUNTS SERVICES  </Link>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+           <Link className="hover:underline" href="/BLOGS">BLOGS</Link>
+
           </div>
+            <Link  href="/CONTACT" className="flex hover:underline items-center border border-blue-700 p-3 hover:bg-blue-600 hover:text-white">CONTACT</Link>
         </div>
       </ul>
-  <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
-        <div className="flex gap-20 bg-white justify-center text-black p-4">
+  {/* <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
+        <div className="flex gap-20 bg-white justify-center text-blue-700 p-4">
 
-          <div className="flex gap-4 bg-white text-black">
+          <div className="flex gap-4 bg-white text-blue-700">
 
             <li className="dropdown">
               <a href="#">SEO</a>
@@ -84,18 +106,7 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            {/* <li className="dropdown">
-              <a href="#">APP MARKETING</a>
-              <div className="dropdown-content ">
-                <div className="flex gap-10">
-                  <div className="flex gap-2 flex-col">
-                    <Link href="/services/service1">APP STORE OPTIMIZATION (ASO)</Link>
-                    <Link href="/services/service2">PAID MARKETING</Link>
-                  </div>
 
-                </div>
-              </div>
-            </li> */}
             <li className="dropdown">
               <a href="#">CONTENT MARKETING </a>
               <div className="dropdown-content ">
@@ -144,7 +155,7 @@ const Navbar = () => {
             </li>
           </div>
         </div>
-      </ul>
+      </ul> */}
 
     </nav>
   );
