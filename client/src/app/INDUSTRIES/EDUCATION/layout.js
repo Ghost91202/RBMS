@@ -1,7 +1,7 @@
 
 
 export const metadata = {
-  title: "EDUCATION services",
+  title: "EDUCATION",
   description: "top digital marketing agency in India ",
 };
 

@@ -13,20 +13,24 @@ export default function Section4() {
             <div className="flex justify-end">
                 <div className="lg:h-2xl flex flex-col">
                     <div className="flex">
-                        <Cards title="UI&UX DESIGN"
+                        <Cards title="WORDPRESS DEVELOPMENT"
                             icon=<SiChatbot />
+                            link="/services/DESIGN-&-DEVELOPMENT/WORDPRESS_WEBSITE_DEVELOPMENT"
                         />
                         <Cards1 title=" WEBSITE DEVELOPMENT "
                             icon=<SiChatbot />
+                             link="/services/DESIGN-&-DEVELOPMENT/WEBSITE_DESIGN_SERVICES"
 
                         />
                         <Cards title="Digital Marketing "
                             icon=<SiChatbot />
+                               link="/services"
                         />
                     </div>
                     <div className="flex">
                         <Cards1 title=" SEO "
                             icon=<SiChatbot />
+
 
                         />
                         <Cards title="SMM"

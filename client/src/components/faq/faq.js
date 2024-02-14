@@ -43,7 +43,7 @@ const AccordionItem = ( { header, text } ) => {
                 className={`pl-[62px] duration-200 ease-in-out ${ active ? "block" : "hidden"
                     }`}
             >
-                <p className=" leading-relaxed absolute w-96 bg-white text-blue-600 p-10 rounded-2xl text-body-color">
+                <p className=" leading-relaxed absolute w-96 bg-white drop-shadow-2xl shadow-2xl text-blue-600 p-10 rounded-2xl text-body-color">
                     {text}
                 </p>
             </div>

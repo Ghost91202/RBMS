@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-blue-700">
+    <nav className="text-white relative z-50 w-screen">
       <div>
 
       </div>
@@ -27,11 +27,12 @@ const Navbar = () => {
         <span></span>
       </div>
       <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
-        <div className="flex gap-20 bg-white justify-between pl-4 pr-10 text-blue-700 p-4">
+        <div className="flex gap-20 bg-black/50 fixed w-screen justify-between pl-4 pr-10  p-4">
           <Link href="/">
-            <Image src={Logo} alt="rahil business multiple solution" className="w-10" />
+            Logo
+            {/* <Image src={Logo} alt="rahil business multiple solution" className="w-10" /> */}
           </Link>
-          <div className="flex gap-4 items-center bg-white text-blue-700">
+          <div className="flex gap-4 items-center  ">
             <li>
               <Link className="hover:underline hover:text-orange-600"  href="/">HOME</Link>
             </li>
@@ -86,9 +87,9 @@ const Navbar = () => {
         </div>
       </ul>
   {/* <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
-        <div className="flex gap-20 bg-white justify-center text-blue-700 p-4">
+        <div className="flex gap-20 bg-white justify-center  p-4">
 
-          <div className="flex gap-4 bg-white text-blue-700">
+          <div className="flex gap-4 bg-white ">
 
             <li className="dropdown">
               <a href="#">SEO</a>

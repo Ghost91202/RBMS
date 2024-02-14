@@ -13,14 +13,14 @@ export default function section3() {
                 <div className='  rounded-2xl flex flex-col gap-5 '>
 
                     <h1 className="lg:text-4xl text-3xl font-bold ">How to get started</h1>
-                    <p className=" font-bold -mt-5">In a 30 minute call we’ll use your own data to:</p>
+                    <p className=" font-bold -mt-5">In a 30 minute call we&apos;ll use your own data to:</p>
                     <ul className="ml-3">
-                        <li>Show you how your SEO efforts are working – for FREE</li>
+                        <li>Show you how your SEO efforts are working  for FREE</li>
                         <li>
                             Identify the 20% of SEO activities that will drive the biggest business results </li>
                         <li>Definitively state if we can make a significant impact in your SEO performance</li>
                     </ul>
-                    <p>If your website is doing better than our baseline we’ll simply congratulate you. If it doesn’t, we’ll discuss what step 2 should look like.</p>
+                    <p>If your website is doing better than our baseline we&apos;ll simply congratulate you. If it doesn&apos;t, we&apos;ll discuss what step 2 should look like.</p>
                     <Link href="#" className="">
                         <Button title="Get a free live audit" />
                     </Link>

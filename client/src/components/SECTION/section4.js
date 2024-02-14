@@ -6,11 +6,11 @@ import { SlSocialYoutube } from "react-icons/sl";
 
 export default function section4( params ) {
     return (
-        <div className="flex flex-col gap-10 p-5 mb-10 w-screen justify-center items-center">
+        <div className="flex flex-col gap-10 p-5 mb-10 w-screen text-white bg-transparent justify-center items-center">
             <div className="w-3/4 flex flex-col justify-center">
-                <h1 className="flex justify-center lg:text-4xl font-bold ">Make Your Marketing Irresistible</h1>
+                <h1 className="flex justify-center lg:text-4xl font-bold text-white">Make Your Marketing Irresistible</h1>
                 <p className="  flex justify-center font-semibold">Not only does our work look great, but it also performs great.
-                    Whatever you need... we’re here to help you get results.</p>
+                    Whatever you need... we&apos;re here to help you get results.</p>
             </div>
             <div className="grid grid-cols-3 gap-5 lg:text-2xl lg:grid-cols-4 ">
                  <div className="flex justify-center  lg:p-3 gap-2 flex-col items-center">

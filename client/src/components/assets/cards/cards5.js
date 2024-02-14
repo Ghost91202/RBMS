@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 
-export default function cards4( { title, icon, link } ) {
+export default function cards4( { title, icon, link,desc  } ) {
       const isValidLink = link && typeof link === "string";
 
     return (
@@ -11,10 +11,11 @@ export default function cards4( { title, icon, link } ) {
                     {icon}
                 </div>
 
-                <h1 className="text-4xl">{title}</h1>
+          <h1 className="text-4xl">{title}</h1>
+            <p>{desc}</p>
                 {isValidLink ? (
             <div className="  flex items-center lg:text-2xl  ">
-              <Link href={link}>view more--</Link><IoIosArrowRoundForward/>
+              <Link href={link}>view more--</Link>
             </div>
           ) : (
             <span className="text-2xl ">view more--</span>

@@ -41,7 +41,7 @@ const ButtonComponent = () => {
             <div className="flex w-screen flex-col justify-center  gap-2">
                 <div>
                     <h1 className="flex lg:text-5xl font-bold justify-center">
-                        Explore all our<span className=" text-orange-500"> Services. ...</span>
+                        Explore all our<span className=" text-blue-600"> Services. ...</span>
                     </h1>
                 </div>
                 <div className="flex lg:pt-10 lg:p-20 flex-col justify-center text-gray-700 gap-5">

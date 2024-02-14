@@ -5,7 +5,7 @@ export default function why( params ) {
     return (
         <div className="flex flex-col w-screen gap-10 justify-center p-20">
             <h1 className="flex lg:text-5xl font-bold justify-center">
-                Why People Choose <span className="text-orange-500"> Our Services ?</span>
+                Why People Choose <span className="text-blue-600"> Our Services ?</span>
             </h1>
            <div className="flex justify-center gap-10"> <div className="flex flex-col gap-4 justify-center">
                 <Cards2
