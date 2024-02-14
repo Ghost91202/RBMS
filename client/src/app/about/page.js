@@ -15,6 +15,7 @@ export default function Page() {
 WANT TO WORK WITH"
                 desc="Rahil Business Multiple Solution is a data-driven digital marketing agency in uttarpradesh. Our customized campaigns deliver measurable results, free of jargon. We pride ourselves on professionalism and excellence."
                 img={img}
+                Mainh="ABOUT US "
             />
             <Section />
             <Section4/>

@@ -4,35 +4,41 @@ import { SiChatbot } from "react-icons/si";
 
 export default function Section4() {
     return (
-        <div className="w-screen flex justify-end mt-10">
-            {/* <h1 className="lg:text-7xl -rotate-45 ml-20">OUR SERVICES</h1> */}
-              <div className="lg:h-2xl flex flex-col">
-                <div className="flex">
-                     <Cards title="UI&UX DESIGN"
-                icon=<SiChatbot />
-            />
-            <Cards1 title=" WEBSITE DEVELOPMENT "
-                icon=<SiChatbot />
+        <div className="w-screen flex flex-col gap-5 justify-end mt-10">
+            <div className="flex p-10 gap-3">
+                <h1 className="lg:text-5xl lg:w-1/2 text-blue-600 ml-20">A Results-Driven Digital Marketing Agency</h1>
+                <p className="lg:text-xl lg:w-1/2 ml-20">We specialize in helping businesses enhance their online presence and connect effectively with their target audience, and with our range of services, we help businesses achieve these goals.</p>
 
-            />
-              <Cards title="Digital Marketing "
-                icon=<SiChatbot />
-            />
-           </div>
-                <div className="flex">
-                     <Cards1 title=" SEO "
-                icon=<SiChatbot />
+            </div>
+            <div className="flex justify-end">
+                <div className="lg:h-2xl flex flex-col">
+                    <div className="flex">
+                        <Cards title="UI&UX DESIGN"
+                            icon=<SiChatbot />
+                        />
+                        <Cards1 title=" WEBSITE DEVELOPMENT "
+                            icon=<SiChatbot />
 
-            />
-            <Cards title="SMM"
-                icon=<SiChatbot />
-            />
-            <Cards1 title=" ACCOUNTS"
-                icon=<SiChatbot />
+                        />
+                        <Cards title="Digital Marketing "
+                            icon=<SiChatbot />
+                        />
+                    </div>
+                    <div className="flex">
+                        <Cards1 title=" SEO "
+                            icon=<SiChatbot />
 
-            />
-             </div>
+                        />
+                        <Cards title="SMM"
+                            icon=<SiChatbot />
+                        />
+                        <Cards1 title=" ACCOUNTS"
+                            icon=<SiChatbot />
+
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     )
 }

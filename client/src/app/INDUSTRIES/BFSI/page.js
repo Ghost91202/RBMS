@@ -1,13 +1,19 @@
 import Navbar from "@/components/navbar/mainnav";
 import Footer from "@/components/footer/footer";
+import Banner from "../../../components/assets/Banner/Banner3"
+// import img from "../../../assets/"
+import Faq from "../../../components/faq/faq"
+
 export default function SEO() {
     return (
         <div ClassName="flex flex-col ">
-            {/* <Navbar /> */}
-            <Navbar/>
-            BFSI
-        <Footer/>
-            {/* <Footer /> */}
+            <Navbar />
+            <Banner heading="Digital Marketing For Banking, Financial Services and Insurance (BFSI) Industry"
+                desc="A trusted digital marketing partner for leading BFSI companies. Get seen, win trust and build your brand online with our expertise"
+            Mainh="INDUSTRIES / BFSI"
+            />
+            <Faq/>
+            <Footer />
         </div>
     );
 }
